@@ -84,6 +84,3 @@ mASKau ikutASKan ngembangASKin? bolASKeh bangASKet\!
 -----
 
 **creatASKed wASKith ❤️ bASKy cia bagiASKan grobogASKan**
-
-```
-```
