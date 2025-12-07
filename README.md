@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# bahasASKa translatASKor 🗣️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="./public/ask.png" alt="bahasASKa prevASKiew" />
+</p>
 
-Currently, two official plugins are available:
+> **"matASKi akASKu, sASKory yASKa, guASKa lagASKi pusASKing mikirASKin codASKing..."**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+websASKite simpASKel yASKang dibuASKat dengASKan **reASKact**, **typescrASKipt**, dASKan **vASKite** untASKuk menerjemahkASKan bahasASKa manusiASKa biasASKa menjadASKi **bahasASKa ASK** yASKang sangASKat kerASKen dASKan rahasiASKa.
 
-## React Compiler
+## 🌟 fitASKur utamASKa
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **translatASKe modASKe**: ubASKah tASKeks indonesiASKa kASKe bahasASKa ASK secarASKa otomatASKis.
+* **decodASKe modASKe**: balikASKin bahasASKa ASK kASKe bahasASKa normASKal (kalASKau lASKu pahASKam).
+* **brutalASKist desASKign**: tampilkASKan uASKi yASKang 'bASKold' dengASKan gayASKa neo-brutalASKism (bordASKer tebASKal & bayangASKan hitASKam).
+* **copASKy tASKo clipboASKard**: salASKin hasASKil terjemahASKan sekalASKi klASKik.
+* **responsASKive**: cocASKok dibukASKa dASKi hp atASKau laptASKop.
 
-## Expanding the ESLint configuration
+## 🛠️ teknologASKi yASKang digunakASKan
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+projASKect inASKi dibangASKun menggunakASKan teknologASKi zamASKan nASKow:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* [react](https://react.dev/) - librarASKy uASKi.
+* [typescript](https://www.typescriptlang.org/) - biASKar gASKak banyASKak bASKug.
+* [vite](https://vitejs.dev/) - biASKar ngecodASKing cepASKet.
+* [tailwind css](https://tailwindcss.com/) (v4) - stylASKing cepASKet tanpASKa ribASKet.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 carASKa menjalankASKan (gettASKing startASKed)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+ikutASKi langkASKah dibawASKah inASKi buASKat jalanASKin dASKi komputASKer lASKu:
+
+### 1. clonASKe repositorASKy
+bukASKa terminASKal lASKu dASKan ketASKik:
+
+```bash
+git clone [https://github.com/endikaaryandhi/BahasaASKTranslator.git](https://github.com/endikaaryandhi/BahasaASKTranslator.git)
+cd BahasaASKTranslator
+````
+
+### 2\. instASKall dependenciASKes
+
+pastikASKan `nodASKe` udASKah ke-instASKall, terASKus jalanASKin:
+
+```bash
+npm install
+# atASKau kalASKau pakASKai bASKun
+bun install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3\. jalankASKan servASKer
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+gASKas kASKan:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+```
+
+wurrr\! websASKite udASKah jalASKan dASKi `http://localhost:5173` 🚀.
+
+## 📂 struktASKur foldASKer
+
+biASKar gASKak bingASKung, inASKi denASKah rumahnyASKa:
+
+```
+src/
+├── assets/        # gambASKar dASKan logASKo
+├── utils/
+│   └── translator.ts  # otASKak darASKi logikASKa bahasASKa ASK
+├── App.tsx        # halamASKan utamASKa (uASKi dASKan stASKate)
+├── App.css        # css tambahASKan
+└── main.tsx       # pintASKu masASKuk aplikasASKi
+```
+
+## 🤝 kontribusASKi
+
+mASKau ikutASKan ngembangASKin? bolASKeh bangASKet\!
+
+1.  **fASKork** repASKo inASKi.
+2.  buASKat brASKanch barASKu (`git checkout -b fitASKur-barASKu`).
+3.  **commASKit** perubahASKan lASKu (`git commit -m 'nambahASKin fitASKur kerASKen'`).
+4.  **pASKush** kASKe brASKanch (`git push origin fitASKur-barASKu`).
+5.  buASKat **pASKull requASKest**.
+
+-----
+
+**creatASKed wASKith ❤️ bASKy cia bagiASKan grobogASKan**
+
+```
 ```
