@@ -81,14 +81,14 @@ function App() {
             </div>
             
             <div className="relative mt-4">
-              <div className="w-full min-h-32 md:min-h-40 p-3 md:p-4 text-lg md:text-xl font-bold border-4 border-black bg-[#E0E7FF] text-black break-words whitespace-pre-wrap flex items-center">
+              <div className={`w-full min-h-32 md:min-h-40 p-3 md:p-4 text-lg md:text-xl font-bold border-4 border-black bg-[#E0E7FF] text-black whitespace-pre-wrap ${resultText ? 'break-all max-h-60 md:max-h-80 overflow-y-auto' : 'flex items-center'}`}>
                 {resultText || <span className="opacity-30 uppercase text-sm md:text-base font-normal">Menunggu input...</span>}
               </div>
 
               {resultText && (
                 <button
                   onClick={handleCopy}
-                  className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 bg-black text-white px-4 md:px-5 py-1.5 md:py-2 border-2 border-white font-bold text-xs md:text-sm uppercase tracking-wider hover:bg-[#0EAD69] hover:border-black hover:text-black hover:shadow-[4px_4px_0px_0px_#000] active:shadow-none transition-all cursor-pointer flex items-center gap-2 whitespace-nowrap"
+                  className="absolute bottom-[-15px] left-0 right-0 mx-auto w-fit bg-black text-white px-4 md:px-5 py-1.5 md:py-2 border-2 border-white font-bold text-xs md:text-sm uppercase tracking-wider hover:bg-[#0EAD69] hover:border-black hover:text-black hover:shadow-[4px_4px_0px_0px_#000] active:shadow-none transition-all cursor-pointer flex items-center gap-2 whitespace-nowrap"
                 >
                   {copied ? (
                     <>
